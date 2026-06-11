@@ -16,7 +16,6 @@ services:
     restart: always
     volumes:
       - db_volume:/var/lib/postgresql
-      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
       
   migrate:
     build: .

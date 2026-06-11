@@ -8,6 +8,8 @@ from alembic import context
 from app.db.base import Base
 from app.core.config import settings
 
+from app.models.board import Board  # noqa: F401
+from app.models.user import User  # noqa: F401
 
 config = context.config
 if config.config_file_name is not None:
